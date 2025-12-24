@@ -31,10 +31,10 @@ if (isset($_GET["id"])) {
     $email = $payment_user_data["uemail"];
     $country = $payment_user_data["country"];
 
-    $merchant_id = "1221608";
+    $merchant_id = "";
     $order_id = $payment_id;
     $currency = "USD";
-    $merchant_secret = "MzIyOTI0MjQ3MzE4NTg0ODMwODgzMzU0NDc1MTIzNjIxOTA2Mzc="; 
+    $merchant_secret = ""; 
 
     $hash = strtoupper(
         md5(

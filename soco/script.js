@@ -2952,7 +2952,7 @@ function payNow(upid) {
       // Put the payment variables here
       var payment = {
         "sandbox": true,
-        "merchant_id": "1221608",    // Replace your Merchant ID
+        "merchant_id": "",    // Replace your Merchant ID
         "return_url": "http://localhost/soco/success.php?id="+upid,     // Important
         "cancel_url": "http://localhost/soco/profile.php",     // Important
         "notify_url": "http://localhost/soco/news.php",

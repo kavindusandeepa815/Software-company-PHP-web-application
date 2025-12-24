@@ -1,0 +1,890 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
+@font-face {
+  font-family: "Popins-Bold";
+  src: url("fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Popins-Regular";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Popins-Medium";
+  src: url("fonts/OpenSans-Medium.ttf");
+}
+
+* {
+  font-family: "Popins-Medium";
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* For screen widths up to 768 pixels */
+@media (max-width: 768px) {
+  .bold-font {
+    font-family: "Popins-Bold";
+    font-size: 35px;
+  }
+
+  .bold-fontAU {
+    font-family: "Popins-Bold";
+  }
+
+  .imgMAIN {
+    max-width: 200px;
+  }
+
+  .imgLOGO {
+    max-width: 155px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+  }
+
+  .invoiceIMG {
+    max-width: 155px;
+  }
+
+  .successIMG {
+    max-width: 140px;
+  }
+
+  .profilelogo {
+    max-width: 200px;
+  }
+
+}
+
+/* For screen widths between 768 and 1200 pixels */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .bold-font {
+    font-family: "Popins-Bold";
+    font-size: 45px;
+  }
+
+  .bold-fontAU {
+    font-family: "Popins-Bold";
+  }
+
+  .imgMAIN {
+    max-width: 260px;
+  }
+
+  .imgLOGO {
+    max-width: 180px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+  }
+
+  .invoiceIMG {
+    max-width: 180px;
+  }
+
+  .successIMG {
+    max-width: 240px;
+  }
+
+  .profilelogo {
+    max-width: 140px;
+  }
+
+}
+
+/* For screen widths above 1200 pixels */
+@media (min-width: 1200px) {
+  .bold-font {
+    font-family: "Popins-Bold";
+    font-size: 60px;
+  }
+
+  .bold-fontAU {
+    font-family: "Popins-Bold";
+  }
+
+  .imgMAIN {
+    max-width: 540px;
+  }
+
+  .imgLOGO {
+    max-width: 250px;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+  }
+
+  #div0 {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  #div0:hover {
+    transform: scale(1.1)
+  }
+
+
+  .invoiceIMG {
+    max-width: 250px;
+  }
+
+  .successIMG {
+    max-width: 340px;
+  }
+
+  .profilelogo {
+    max-width: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* animtion */
+
+  /* hide */
+
+  .hideElement {
+    opacity: 0;
+  }
+
+
+  /* 01 */
+  @keyframes zoomOut {
+    0% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+  .mainPhotoA {
+    animation: zoomOut 1.5s ease forwards;
+    opacity: 1;
+  }
+
+
+  /* 02 */
+  /* @keyframes slideUpDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+      background-color: #0b2ad8;
+    }
+
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      background-color: #071252;
+    }
+  }
+
+
+  .mainDivA {
+    animation: slideUpDown 1s ease forwards;
+    opacity: 1;
+  } */
+
+
+  /* 03 */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .mainTextA {
+    animation: slideInLeft 1s ease forwards;
+    opacity: 1;
+  }
+
+
+  /* 04 */
+  @keyframes slideInLeft2 {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .mainText2A {
+    animation: slideInLeft2 1s ease forwards;
+    opacity: 1;
+  }
+
+  /* animation */
+
+
+
+
+  /* sub animation */
+
+  /* 01 */
+  @keyframes zoomOutS {
+    0% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+  .subImgA {
+    animation: zoomOutS 1.5s ease forwards;
+    opacity: 1;
+  }
+
+
+
+  /* 02 */
+  @keyframes slideInLeftS {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .subTextA {
+    animation: slideInLeftS 1s ease forwards;
+    opacity: 1;
+  }
+
+
+  /* 03 */
+  @keyframes slideInLeft2S {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .subText2A {
+    animation: slideInLeft2S 1s ease forwards;
+    opacity: 1;
+  }
+
+  /* sub animation */
+
+}
+
+.mainWIDEA {
+  height: 6vh;
+  background-color: #071252;
+  display: flex;
+  align-items: center;
+}
+
+.mainWIDEB {
+  height: 3vh;
+  background-image: linear-gradient(#00ff9d, #29abe2);
+}
+
+.textGREDIENT {
+  background: linear-gradient(#00ff9d, #29abe2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.textGREDIENThover {
+  background: linear-gradient(#00ff9d, #29abe2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.textGREDIENThover:hover {
+  background: linear-gradient(#02da87, #2598c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.textGREDIENThoverA {
+  color: #071252;
+  font-weight: bold;
+}
+
+.textGREDIENThoverA:hover {
+  color: rgb(13, 121, 203);
+  font-weight: bold;
+}
+
+
+
+.borderGREDIENT {
+  border: 5px solid;
+  border-image: linear-gradient(#00ff9d, #29abe2) 1;
+}
+
+/* new */
+.ourinsightsImg {
+  height: 70vh;
+  background-image: url("Img/teamB.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.whoweareImg {
+  height: 90vh;
+  background-image: url("Img/whoweareNew.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.whychooseusImg {
+  height: 70vh;
+  background-image: url("Img/whychooseus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviceImg {
+  height: 50vh;
+  background-image: url("Img/research.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+.icontdiv {
+  padding-left: 17px;
+  padding-right: 17px; 
+  padding-top: 9px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #29abe2;
+}
+
+.whatwedodiv {
+  box-shadow: 0px 0px 15px #bac1e9;
+  background-color: #fff;
+  color: black;
+  transition: 0.2s;
+}
+
+.whatwedodivcontent {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.whatwedodiv:hover {
+  background-color: #071252;
+  color: white;
+}
+
+
+.whatwedodiv:hover .whatwedodivcontent {
+  margin-top: 0px;
+}
+
+
+.baxFixService {
+  background-image: linear-gradient(to right, #071252, rgba(0, 0, 50, 0.4)), url("Img/services.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+/* new */
+
+.baxFixWeb {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 50, 0.4)), url("Img/webD.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.baxFixAbout {
+  background-image: linear-gradient(to right, #071252, rgba(0, 0, 50, 0.4)), url("Img/team6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.baxFixMobile {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 50, 0.4)), url("Img/mobileD.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.baxFixsoftware {
+  background-image: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 50, 0.4)), url("Img/softwareD.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+.logo-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-scroll {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* සැපයුම් බාවිතය සඟවන්න */
+  -ms-overflow-style: none;
+  /* IE සහ Edge සඳහා සැපයුම් බාවිතය සඟවන්න */
+}
+
+.logo-wrapper {
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+.logo-wrapper img {
+  max-width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reveal {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.HDMAL {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.HDMAL:hover {
+  color: #071252;
+  text-decoration: underline;
+}
+
+
+.HedDropHover:hover {
+  background-color: #D8D9FF;
+  border-radius: 15px;
+}
+
+
+
+
+/* Animation property */
+.contactButton {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.contactButton {
+  left: calc(50% - 3em);
+  top: calc(50% - 2em);
+  transform-origin: 50% 5em;
+}
+
+
+
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 9999;
+  /* Make sure the loader appears on top of other elements */
+}
+
+
+.animated-element {
+  animation: fadeInAll 2s;
+}
+
+@keyframes fadeInAll {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.signInDeco {
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #071252;
+}
+
+
+.overFlow {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 400px;
+}
+
+
+.warningAlert {
+  background-color: #B70202;
+}
+
+.successAlert {
+  background-color: #128600;
+}
+
+
+
+/* payment */
+
+
+.bodyPAY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', 'Ubuntu', sans-serif;
+  height: 80vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sectionPAY {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 112px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+
+.productPAY {
+  display: flex;
+}
+
+.descriptionPAY {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pPAY {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.imgpay {
+  border-radius: 6px;
+  margin: 10px;
+  width: 54px;
+  height: 57px;
+}
+
+.h4PAY,
+.h3PAY,
+.h5PAY {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.154px;
+  color: #242d60;
+  margin: 0;
+}
+
+.h5PAY {
+  opacity: 0.7;
+}
+
+.buttonPAY {
+  height: 36px;
+  background: #556cd6;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.6;
+  border-radius: 0 0 6px 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+}
+
+.buttonPAY:hover {
+  opacity: 0.8;
+}
+
+
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-box img {
+  transition: all 0.3s;
+  display: block;
+  height: auto;
+  transform: scale(1);
+}
+
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+/* new */
+.leftprofilediv:hover {
+  background-color: #05092c;
+}
+
+/* new */
+
+
+.baxFixAffiliate {
+  background-image: linear-gradient(to right, #071252, rgba(0, 0, 50, 0.4)), url("Img/affiliate.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+
+.bulletdiv {
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #29abe2;
+}
+
+
+.affbenefitsImg {
+  height: 70vh;
+  background-image: url("Img/benifit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 2;
+  display: none;
+  z-index: 1;
+}
+
+#scrollToTopBtn button {
+  color: #071252;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
